@@ -1,0 +1,93 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+.movie_search {
+    position: relative;
+    width: 260px;
+    height: 50px;
+    margin: 30px auto 0 auto;
+}
+
+.search_database {
+    margin: 30px;
+}
+
+.check_results {
+    margin: 30px;
+}
+
+input {
+    width: 150px;
+    height: 30px;
+    font-size: 12px;
+}
+
+select {
+    height: 30px;
+    width: 100px;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+}
+
+.search {
+    width: 250px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    margin: 0 auto;
+    left: 10px;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    color: #d13c33;
+}
+
+#results {
+    width: 100%;
+    position: relative;
+}
+
+.result {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.result:hover {
+    background-color: grey;
+}
+
+/* .more {
+    display: none;
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 50px;
+    left: 20%;
+    background-color: gainsboro;
+    border: 2px solid black;
+} */
