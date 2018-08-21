@@ -5,8 +5,7 @@
 
 .movie_search {
     position: relative;
-    width: 260px;
-    height: 50px;
+    width: 50%;
     margin: 30px auto 0 auto;
 }
 
@@ -22,6 +21,7 @@ input {
     width: 150px;
     height: 30px;
     font-size: 12px;
+    margin-left: 10px;
 }
 
 select {
