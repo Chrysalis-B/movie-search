@@ -42,8 +42,7 @@ function getResultsHtml(data, title) {
     return html;
 }
 
-$(document).on("click", ".new", function(e) {
-    e.stopImmediatePropagation();
+$(document).on("click", ".new", function() {
     var imdbId = $(this).attr("id");
     $.ajax({
         url: "http://www.omdbapi.com/?apikey=15876fbb&",
@@ -54,6 +53,7 @@ $(document).on("click", ".new", function(e) {
         success: function(data) {
             $("#" + imdbId).append(checkResultHtml(data));
             $("#" + imdbId).removeClass("new");
+            $("#" + imdbId).addClass("expand");
             console.log("#" + imdbId);
         }
     });
@@ -64,6 +64,7 @@ function checkResultHtml(data) {
     var ratings = data.Ratings;
     console.log(data.Ratings);
     var x;
+    html += '<div class="check_results">';
     html +=
         '<p>Synopsis<input placeholder="short synopsis" type="textarea" name="short synopsis" value="' +
         data.Plot +
@@ -102,6 +103,7 @@ function checkResultHtml(data) {
         data.Genre +
         '"></p>';
     html += '<button class="save">Save</button>';
+    html += "</div";
 
     return html;
 }

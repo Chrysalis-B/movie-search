@@ -4,7 +4,7 @@
 }
 
 .movie_search {
-    position: relative;
+    /* position: relative; */
     width: 50%;
     margin: 30px auto 0 auto;
 }
@@ -24,21 +24,18 @@ input {
     margin-left: 10px;
 }
 
-select {
-    height: 30px;
-    width: 100px;
-}
-
 .header {
     width: 100%;
     text-align: center;
 }
 
-.search {
+.search,
+.save {
     width: 250px;
     height: 30px;
-    margin-top: 10px;
     border-radius: 8px;
+    display: block;
+    margin: 10px auto 0 auto;
 }
 
 h1 {
@@ -47,47 +44,39 @@ h1 {
 }
 
 img {
+    display: block;
     height: 200px;
     width: 200px;
-    position: relative;
+    object-fit: cover;
     margin: 0 auto;
-    left: 10px;
 }
 
 p {
     text-align: center;
 }
 
-a {
-    color: #d13c33;
+.new {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto 20px auto;
+    /* position: relative; */
 }
 
-#results {
-    width: 100%;
-    position: relative;
-}
-
-.result {
+.expand {
     border: 2px solid black;
     border-radius: 10px;
     padding: 20px;
     width: 100%;
-    margin-bottom: 20px;
-    position: relative;
+    margin: 0 auto 20px auto;
+    /* position: relative; */
+}
+
+.check_results input {
+    width: 100%;
 }
 
 .result:hover {
-    background-color: grey;
+    background-color: rgba(192, 192, 192, 0.5);
 }
-
-/* .more {
-    display: none;
-    width: 150px;
-    height: 45px;
-    border-radius: 10px;
-    position: relative;
-    margin-bottom: 50px;
-    left: 20%;
-    background-color: gainsboro;
-    border: 2px solid black;
-} */
