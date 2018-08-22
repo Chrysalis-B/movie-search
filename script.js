@@ -16,6 +16,9 @@ $(".search").on("click", function() {
             type: "movie"
         },
         success: function(data) {
+            if (data.Error) {
+                return results.html("<p>No results found :(</p>");
+            }
             results.html(getResultsHtml(data.Search, title));
         }
     });
@@ -54,7 +57,6 @@ $(document).on("click", ".new", function() {
             $("#" + imdbId).append(checkResultHtml(data));
             $("#" + imdbId).removeClass("new");
             $("#" + imdbId).addClass("expand");
-            console.log("#" + imdbId);
         }
     });
 });

@@ -4,7 +4,6 @@
 }
 
 .movie_search {
-    /* position: relative; */
     width: 50%;
     margin: 30px auto 0 auto;
 }
@@ -17,10 +16,15 @@
     margin: 30px;
 }
 
+.result:hover {
+    background-color: rgba(192, 192, 192, 0.5);
+}
+
 input {
     width: 150px;
     height: 30px;
     font-size: 12px;
+    margin-top: 10px;
     margin-left: 10px;
 }
 
@@ -61,7 +65,6 @@ p {
     padding: 20px;
     width: 50%;
     margin: 0 auto 20px auto;
-    /* position: relative; */
 }
 
 .expand {
@@ -70,13 +73,8 @@ p {
     padding: 20px;
     width: 100%;
     margin: 0 auto 20px auto;
-    /* position: relative; */
 }
 
 .check_results input {
     width: 100%;
-}
-
-.result:hover {
-    background-color: rgba(192, 192, 192, 0.5);
 }
